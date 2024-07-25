@@ -1,0 +1,180 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.herosec {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 100px 10%;
+  min-height: 100vh;
+  overflow: hidden;
+  align-items: center;
+}
+
+.hero-img-container {
+  flex: 1 1 0%;
+}
+
+.hero-img-container img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 15%;
+}
+
+.header-content {
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.salon-name {
+  max-width: 90px;
+}
+
+.salon-name h1 {
+  color: #deb887;
+  font-size: 6rem;
+  font-weight: 600;
+  font-family: "Merriweather Sans", sans-serif;
+  line-height: 100px;
+  max-width: 30rem;
+}
+
+.tagline {
+  margin-top: 2rem;
+  font-size: 20px;
+  width: 50%;
+  line-height: 40px;
+}
+
+.free {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.free a {
+  color: #deb887;
+}
+
+.free a:hover {
+  color: #d67f45;
+}
+
+/* Call-to-action buttons */
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-radius: 7px;
+  width: 15%;
+  text-align: center;
+}
+
+#cta-button {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 20px;
+  border: 1px #ffffff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #deb887;
+  transition: background-color 0.3s ease;
+  border-radius: 7px;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+#cta-button:hover {
+  background-color: #d67f45;
+  color: #000000;
+  border: 2px solid #d67f45;
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  height: 6rem;
+  justify-content: center;
+  background-color: #212424;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+  font-size: smaller;
+}
+
+footer a {
+  color: #deb887;
+}
+
+footer a:hover {
+  color: #595755;
+}
+
+/* tablet */
+@media (max-width: 1023px) {
+  .herosec {
+    padding: 40px 5%;
+  }
+
+  .salon-name h1 {
+    font-size: 4rem;
+    line-height: 80px;
+  }
+
+  .hero-img-container img {
+    right: 2%;
+  }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .herosec {
+    flex-direction: column;
+  }
+  .hero-img-container img {
+    position: static;
+  }
+
+  .tagline {
+    width: 100%;
+  }
+  .cta-button {
+    width: 49%;
+    margin-top: 15px;
+  }
+
+  .hero-img-container img {
+    margin-top: 20px;
+    width: 350px;
+  }
+  .herosec {
+    padding-bottom: 0;
+  }
+}
